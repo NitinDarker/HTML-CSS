@@ -1,0 +1,25 @@
+.container {
+    width: 600px;
+    height: 600px;
+    background-color: gainsboro;
+    border: 1px solid black;
+}
+
+.ball {
+    width: 8%;
+    height: 8%;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 50px;
+    position: relative;
+    transition: translate 2s ease;
+    animation: projectile 3s linear 0s infinite alternate;
+}
+
+@keyframes projectile {
+    to {
+        background-color: blue;
+        top: 92%;
+        translate: 50%;
+    }
+}

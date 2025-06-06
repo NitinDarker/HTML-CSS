@@ -1,0 +1,529 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+::selection {
+  background-color: rgba(255, 0, 0, 0.66);
+  color: white;
+}
+
+.container {
+  width: 99.7%;
+}
+
+.div1 {
+  height: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.div1 .background-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(40%);
+}
+
+.div1 .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div1 .navbar .main-logo {
+  display: inline-block;
+  padding: 24px 174px;
+}
+
+.div1 .navbar .right-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding-right: 167px;
+  padding-bottom: 3px;
+  box-sizing: border-box;
+}
+
+.div1 .navbar .right-nav #language-select {
+  background: none;
+  color: white;
+  width: 124.8px;
+  height: 32px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 6px;
+}
+
+.div1 .navbar .right-nav #language-select option {
+  color: black;
+  text-align: center;
+}
+
+.div1 .navbar .right-nav .signin-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  min-height: 2rem;
+  font-size: 0.875rem;
+  padding: 0.28rem 1rem;
+  margin-right: 12px;
+  height: 32px;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.div1 .navbar .right-nav .signin-button:hover {
+  background-color: rgb(201, 0, 0);
+  cursor: pointer;
+}
+
+.div1 main {
+  display: flex;
+  flex-direction: column;
+  margin: 187px 150px 220px 150px;
+  gap: 15px;
+  position: inherit;
+}
+
+.div1 main .heading {
+  color: white;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.div1 main .sec-heading {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+.div1 main .tert-heading {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin: 13px;
+}
+
+.div1 main .signin-window-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.div1 main .email-box {
+  background: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 4px;
+  width: 371.263px;
+  height: 56px;
+}
+
+.div1 main .email-box::placeholder {
+  color: rgb(188, 188, 188);
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.div1 main .getstarted {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  padding: 12px 24px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 24px;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.div1 main .getstarted:hover {
+  background-color: rgb(175, 0, 0);
+  cursor: pointer;
+}
+
+.tv {
+  border-top: 8px;
+  border-style: solid;
+  border-color: rgb(35, 35, 35);
+  background-color: black;
+  height: 570px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.tv .content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  gap: 20px;
+  padding-left: 150px;
+}
+
+.tv .content h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.tv .content p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.tv .tv-gif {
+  position: relative;
+  width: 700px;
+  top: 50px;
+  right: 100px;
+}
+
+.tv .tv-image {
+  height: 450px;
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+}
+
+.tv .tv-video {
+  height: 250px;
+  position: absolute;
+  top: 90px;
+  right: 96px;
+}
+
+.offline {
+  border-top: 6px;
+  border-style: solid;
+  border-color: rgb(35, 35, 35);
+  background-color: black;
+  height: 570px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.offline .mobile-gif {
+  position: relative;
+  width: 700px;
+  top: 50px;
+  left: 100px;
+}
+
+.offline .mobile-image {
+  height: 450px;
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+}
+
+.offline .content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  gap: 20px;
+  padding-right: 150px;
+}
+
+.offline .content h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.offline .content p {
+  font-size: 24px;
+  font-weight: 400;
+  padding-right: 60px;
+}
+
+.stream {
+  border-top: 6px;
+  border-style: solid;
+  border-color: rgb(35, 35, 35);
+  background-color: black;
+  height: 570px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.stream .content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  gap: 20px;
+  padding-left: 150px;
+}
+
+.stream .content h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.stream .content p {
+  font-size: 24px;
+  font-weight: 400;
+  padding-right: 60px;
+}
+
+.stream .tv-gif {
+  position: relative;
+  width: 700px;
+  top: 50px;
+  right: 100px;
+}
+
+.stream .tv-image {
+  height: 450px;
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+}
+
+.stream .tv-video {
+  width: 380px;
+  position: absolute;
+  top: 52px;
+  right: 130px;
+}
+
+.kids {
+  border-top: 6px;
+  border-style: solid;
+  border-color: rgb(35, 35, 35);
+  background-color: black;
+  height: 570px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.kids .mobile-gif {
+  position: relative;
+  width: 700px;
+  top: 50px;
+  left: 100px;
+}
+
+.kids .mobile-image {
+  height: 450px;
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+}
+
+.kids .content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  gap: 20px;
+  padding-right: 150px;
+}
+
+.kids .content h1 {
+  font-size: 48px;
+  font-weight: 900;
+  padding-right: 30px;
+}
+
+.kids .content p {
+  font-size: 24px;
+  font-weight: 400;
+  padding-right: 40px;
+}
+
+.faq {
+  border-top: 6px;
+  border-style: solid;
+  border-color: rgb(35, 35, 35);
+  background-color: black;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.faq h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+  margin-top: 80px;
+}
+
+.faq .faq-que {
+  color: white;
+  width: 1096px;
+}
+
+.faq .faq-que details {
+  width: 100%;
+}
+
+.faq .faq-que details summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(35, 35, 35);
+  margin: 5px;
+  height: 36px;
+  width: 1096px;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 24px;
+}
+
+.faq .faq-que details summary:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+}
+
+.faq .faq-que details > p {
+  background-color: rgb(35, 35, 35);
+  font-size: 24px;
+  font-weight: 400;
+  padding: 24px;
+  width: 1096px;
+}
+
+.faq .email-box-footer {
+  margin: 45.6px 80px;
+  padding: 0px 32px;
+  width: 920px;
+  height: 102px;
+}
+
+.email-box-footer .tert-heading {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  height: 30px;
+  font-weight: 400;
+}
+
+.email-box-footer .signin-window-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 16px 164px;
+  width: 586px;
+  height: 56px;
+}
+
+.email-box-footer .email-box {
+  background: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 4px;
+  width: 371.263px;
+  height: 56px;
+}
+
+.email-box-footer .email-box::placeholder {
+  padding: 0px 20px;
+  color: rgb(188, 188, 188);
+  font-size: 16px;
+}
+
+.email-box-footer .getstarted {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  padding: 12px 24px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: none;
+  font-size: 24px;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.email-box-footer .getstarted:hover {
+  background-color: rgb(175, 0, 0);
+  cursor: pointer;
+}
+
+footer {
+  border-top: 6px;
+  border-style: solid;
+  border-color: rgb(35, 35, 35);
+  background-color: black;
+  color: white;
+  width: 1144px;
+  height: 256.4px;
+  display: flex;
+  flex-direction: column;
+  padding: 72px 182px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .f1 {
+  height: 30.4px;
+  font-size: 16px;
+}
+
+footer .f1 .num {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer .f2 {
+  display: flex;
+  gap: 50px;
+  height: 153.2px;
+}
+
+footer .f2 ul {
+  width: 277px;
+}
+
+footer .f2 ul li {
+  margin: 16px 0px;
+  text-decoration: underline;
+  list-style: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+footer .netflix-in {
+  font-size: 14px;
+}
+
+footer #language-select {
+  background: none;
+  color: white;
+  width: 124.8px;
+  height: 32px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding-left: 6px;
+}

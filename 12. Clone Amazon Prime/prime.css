@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 1519px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  background-color: black;
+  color: #aaa;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header .navbar {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .navbar .logo img {
+  width: 104px;
+  height: 19.5px;
+  cursor: pointer;
+}
+
+header .navbar nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 18px;
+  height: 48px;
+}
+
+header .navbar nav ul li:hover {
+  cursor: pointer;
+  background-color: #232c39;
+  color: white;
+}
+
+header .navbar nav ul li {
+  padding: 13px;
+}
+
+header .navbar nav ul li span svg {
+  width: 12px;
+  margin: 0px 0px 3px 5px;
+  fill: #aaa;
+}
+
+header .navbar nav ul li span svg:hover {
+  fill: white;
+}
+
+header .navbar .rightnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+header .navbar .rightnav > span,
+header .navbar .rightnav .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 13px;
+  height: 48px;
+}
+
+header .navbar .rightnav span:hover,
+header .navbar .rightnav .profile:hover {
+  cursor: pointer;
+  background-color: #232c39;
+  color: white;
+}
+
+header .navbar .rightnav .lang {
+  display: flex;
+}
+
+header .navbar .rightnav .lang svg {
+  width: 12px;
+  height: 7px;
+  margin: 0px 0px 3px 5px;
+  fill: #aaa;
+}
+
+header .navbar .rightnav button {
+  background: none;
+  border: none;
+}
+
+header .navbar .rightnav button img {
+  width: 32px;
+  height: 32px;
+}
+
+.div1 {
+  width: 100%;
+  height: calc(730px - 48px - 140px);
+  background-image: url(https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg);
+  background-position: top right;
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+}
+
+.div1 .content {
+  color: white;
+  width: 40%;
+  height: auto;
+  padding: 44px;
+}
+
+@media screen and (max-height: 700px) {
+  .div1 {
+    min-height: calc(695px - 48px);
+  }
+}
+
+.div1 .content h1 {
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 24px;
+  cursor: default;
+}
+
+.div1 .content p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 48px;
+  cursor: default;
+}
+
+.div1 .content button {
+  width: 280px;
+  height: 48px;
+  background-color: #0f79af;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.div2 {
+  height: calc(730px - 48px - 140px);
+  width: 100%;
+  background-image: url(https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Right.jpg);
+  background-position: top right;
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-height: 700px) {
+  .div2 {
+    min-height: calc(695px - 12px);
+  }
+}
+
+.div2 .content {
+  color: white;
+  width: 40%;
+  height: auto;
+  padding: 44px;
+}
+
+.div2 .content h1 {
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 24px;
+  cursor: default;
+}
+
+.div2 .content p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 48px;
+  cursor: default;
+}
+
+.div2 .content button {
+  width: 280px;
+  height: 48px;
+  background-color: #0f79af;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.div3 {
+  height: calc(730px - 48px - 140px);
+  display: flex;
+  flex-direction: row;
+}
+
+.div3 .content {
+  box-sizing: border-box;
+  width: 50vw;
+  padding: 50px 70px;
+}
+
+.div3 .content h1 {
+  font-size: 2.8rem;
+  line-height: 3.1rem;
+  font-weight: 400;
+}
+
+.div3 .content p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  padding: 20px 5px;
+  font-weight: 350;
+}

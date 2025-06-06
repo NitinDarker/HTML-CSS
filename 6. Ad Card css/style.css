@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(203, 220, 225);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bigbox {
+  background-color: white;
+  width: 290px;
+  border: 2px solid rgb(174, 174, 174);
+  border-radius: 15px;
+  padding: 12px;
+  position: absolute;
+  align-self: center;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 15px 5px gray;
+}
+
+img {
+  border-radius: 15px;
+  height: 40vh;
+  width: fit-content;
+  align-self: center;
+}
+
+main {
+  padding: 10px;
+  color: rgb(163, 162, 162);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  font-style: normal;
+}
+
+main nav {
+  padding-top: 8px;
+}
+
+main nav span {
+  border: 1px solid rgb(163, 162, 162);
+  border-radius: 15px;
+  padding: 4px;
+  padding-inline: 9px;
+  margin: 2px;
+  font-weight: 546;
+  font-size: 12px;
+}
+
+main div h3 {
+  color: black;
+  font-weight: 600;
+  font-size: 27px;
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: rgb(219, 237, 255);
+  color: rgb(39, 159, 250);
+  border: none;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 650;
+  font-size: 11px;
+  padding: 12px;
+  padding-left: 26px;
+  padding-right: 26px;
+  margin: 15px;
+  align-self: center;
+  cursor: pointer;
+  transition: transform 0.18s ease;
+}
+
+button:hover {
+  background-color: rgb(145, 206, 255);
+  color: rgb(20, 79, 255);
+  transform: scale(1.2);
+}

@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  border: 1.6px solid black;
+  background-color: red;
+  height: 58px;
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+ul {
+  list-style: none;
+  box-sizing: border-box;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+li {
+  display: inline;
+  margin: 14px;
+}
+
+.navbar > ul > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: bold;
+  filter: brightness(90%);
+  transform: scale(1.1);
+}
+
+.search {
+  border: 2px solid darkred;
+  background-color: rgb(241, 201, 188);
+  color: darkred;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: darkred;
+  padding-left: 4px;
+}
+
+.login {
+  border: 2px solid darkred;
+  background-color: rgb(241, 201, 188);
+  color: darkred;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 70px;
+  height: 38px;
+  margin: 0px 10px;
+  transition: transform 0.2s ease;
+}
+
+main {
+  background-color: gainsboro;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: large;
+}
+
+.box {
+  border: 2px solid black;
+  width: 40vw;
+  min-height: 80vh;
+  padding: 40px;
+  margin: 60px 30px;
+  text-align: center;
+  box-shadow: 5px 5px 15px 5px gray;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.box1 {
+  background-color: palevioletred;
+}
+
+.box2 {
+  background-color: blueviolet;
+}
+
+.box3 {
+  background-color: royalblue;
+  border-radius: 60px;
+  width: 70vw;
+  min-height: 40vh;
+  font-size: 40px;
+  padding: 90px 40px;
+}
+
+footer {
+  background-color: gray;
+  min-height: 80px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.chatbot {
+  padding: 10px;
+  border: 1.5px solid black;
+  background-color: orange;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: transform 0.2s ease;
+}
+
+.chat {
+  height: 50px;
+}
